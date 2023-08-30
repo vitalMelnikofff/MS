@@ -7,13 +7,13 @@ spring:
 
   security:
     oauth2:
-      resourceserver:
+      resource-server:
         jwt:
-          issuer-uri: http://backend-keycloak-auth:8080/auth/realms/ITM
+          issuer-uri: http://localhost:8080/auth/realms/ITM
 
 keycloak:
   realm: ITM
   resource: backend-resources
-  auth-server-url: http://backend-keycloak-auth:8080/auth
+  auth-server-url: http://localhost:8080/auth
   credentials:
-    secret: <ключ от клиента backend-resources>
+    secret: fA5thyv4VMIx7mOkcBuqNkjPqeFDjHBP
