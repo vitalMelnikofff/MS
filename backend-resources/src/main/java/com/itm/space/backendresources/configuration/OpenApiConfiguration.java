@@ -16,8 +16,8 @@ import org.springframework.context.annotation.Configuration;
         type = SecuritySchemeType.OAUTH2,
         flows = @OAuthFlows(
                 authorizationCode = @OAuthFlow(
-                        authorizationUrl = "http://backend-keycloak-auth:8080/auth/realms/ITM/protocol/openid-connect/auth",
-                        tokenUrl = "http://backend-keycloak-auth:8080/auth/realms/ITM/protocol/openid-connect/token",
+                        authorizationUrl = "http://localhost:8080/auth/realms/ITM/protocol/openid-connect/auth",
+                        tokenUrl = "http://localhost:8080/auth/realms/ITM/protocol/openid-connect/token",
                         scopes = {
                                 @OAuthScope(name = "openid", description = "Read access")
                         }
